@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    background-color: #fffcf9;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #6b543c;
+    font-size: 15px;
+}
+
+h1 {
+    color: #262626;
+    font-family: 'Marcellus SC', serif;
+}
+
+h3 {
+    color: #be9c79;
+    font-family: 'Marcellus SC', serif;
+}
+
+h4 {
+    color: #262626;
+    font-family: 'Marcellus SC', serif;
+}
+
+a,
+button,
+input {
+    font-family: 'Marcellus SC', serif;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-barra button {
+    background-color: #be9c79;
+    border: #6b543c;
+}
+
+.flyer {
+    background-image: url("/assets/img/flyer.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#numeros h3 {
+    font-size: 55px;
+    text-shadow: 3px 5px 8px #be9c79;
+}
+
+#productos {
+    background-image: url("/assets/img/fondo2.jpg");
+    background-size: cover;
+}
+
+#contacto {
+    background-image: url("/assets/img/fondo3.jpg");
+}
+
+#contacto button {
+    background-color: #be9c79;
+    box-shadow: 5px 5px #6b543c;
+    transition: all 0.2s ease-in-out;
+}
+
+#contacto button:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
