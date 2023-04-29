@@ -42,7 +42,7 @@ input {
 }
 
 .flyer {
-    background-image: url("/assets/img/flyer.jpg");
+    background-image: url("../../assets/img/flyer.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
@@ -53,12 +53,12 @@ input {
 }
 
 #productos {
-    background-image: url("/assets/img/fondo2.jpg");
+    background-image: url("../../assets/img/fondo2.jpg");
     background-size: cover;
 }
 
 #contacto {
-    background-image: url("/assets/img/fondo3.jpg");
+    background-image: url("../../assets/img/fondo3.jpg");
 }
 
 #contacto button {
