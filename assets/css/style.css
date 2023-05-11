@@ -41,6 +41,31 @@ input {
     border: #6b543c;
 }
 
+.navbar-nav li {
+    margin: 0 10px;
+}
+
+.nav__enlace:hover {
+    background-color: #be9c79;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.drop__item a:hover {
+    background-color: #be9c79;
+    color: white;
+}
+
+.nosotros__fila img {
+    cursor: pointer;
+}
+
+.nosotros__fila img:hover {
+    transform: translateY(-15px) scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
 .flyer {
     background-image: url("../../assets/img/flyer.jpg");
     background-size: cover;
