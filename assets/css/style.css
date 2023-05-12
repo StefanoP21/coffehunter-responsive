@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #fffcf9;
 }
@@ -26,10 +32,43 @@ h4 {
     font-family: 'Marcellus SC', serif;
 }
 
+h6 {
+    font-family: 'Marcellus SC', serif;
+}
+
 a,
 button,
 input {
     font-family: 'Marcellus SC', serif;
+}
+
+#heraldo {
+    background-image: url("../../assets/img/fondo3.jpg");
+}
+
+#numeros h3 {
+    font-size: 55px;
+    text-shadow: 3px 5px 8px #be9c79;
+}
+
+#productos {
+    background-image: url("../../assets/img/fondo2.jpg");
+    background-size: cover;
+}
+
+#contacto {
+    background-image: url("../../assets/img/fondo3.jpg");
+}
+
+#contacto button {
+    background-color: #be9c79;
+    box-shadow: 5px 5px #6b543c;
+    transition: all 0.2s ease-in-out;
+}
+
+#contacto button:hover {
+    background-color: #000;
+    transform: scale(1.1);
 }
 
 .logo {
@@ -39,6 +78,10 @@ input {
 .nav-barra button {
     background-color: #be9c79;
     border: #6b543c;
+}
+
+.navbar {
+    box-shadow: 0 5px 10px #6b543c;
 }
 
 .navbar-nav li {
@@ -66,33 +109,194 @@ input {
     transition: all 0.5s ease-in-out;
 }
 
+.heraldo__img {
+    width: 100%;
+    height: auto;
+}
+
+.heraldo__column {
+    text-align: left;
+}
+
+.heraldo__column button {
+    background-color: #be9c79;
+    border: #6b543c;
+    box-shadow: 5px 5px #6b543c;
+    transition: all 0.3s ease-in-out;
+}
+
+.services__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.services__modal h4 {
+    color: #6b543c;
+}
+
+.services__modal p {
+    color: #be9c79;
+}
+
+.services__modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services__modal-content {
+    position: relative;
+    background-color: #fffcf9;
+    border-radius: 5%;
+    color: #6b543c;
+    max-width: 600px;
+}
+
+.services__modal-service {
+    display: flex;
+}
+
+.services__modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: #6b543c;
+    cursor: pointer;
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+.colaboradores i {
+    color: #6b543c;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.colaboradores i:hover {
+    color: #be9c79;
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+}
+
 .flyer {
     background-image: url("../../assets/img/flyer.jpg");
     background-size: cover;
     background-attachment: fixed;
 }
 
-#numeros h3 {
-    font-size: 55px;
-    text-shadow: 3px 5px 8px #be9c79;
+.productos__img:hover {
+    transform: translateY(-20px) scale(1.1);
+    transition: all 0.5s ease-in-out;
 }
 
-#productos {
-    background-image: url("../../assets/img/fondo2.jpg");
-    background-size: cover;
+.galeria__img {
+    width: 100%;
+    height: auto;
 }
 
-#contacto {
+.galeria__content p {
+    font-size: 25px;
+    color: white;
+    font-family: 'Marcellus SC', serif;
+}
+
+.portfolio-foto{
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-foto-descripcion {
+    position: absolute;
+    top: 0;
+    background-color: rgba(13, 13, 13, 0.6);
+    width: 100%;
+    height: 100%;
+
+    /* Centrar verticalmente */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* Centrar horizontalmente */
+    justify-content: center;
+    text-align: center;
+
+    /* Ocultar la caja */
+    opacity: 0;
+
+    /* Transición de la opacidad */
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio-foto-descripcion:hover {
+    opacity: 1;
+}
+
+.tienda {
+    width: 100%;
+    height: auto;
+    background-image: url("../../assets/img/fondo4.jpg");
+    animation: mover 30s linear infinite alternate;
+    background-size: 150%;
+}
+
+@keyframes mover {
+    from {
+        background-position: bottom left;
+    }
+
+    to {
+        background-position: top right;
+    }
+}
+
+.tienda p{
+    color: white;
+}
+
+.tienda__logo {
+    width: 180px;
+}
+
+.logos {
+    width: 100%;
     background-image: url("../../assets/img/fondo3.jpg");
 }
 
-#contacto button {
-    background-color: #be9c79;
-    box-shadow: 5px 5px #6b543c;
-    transition: all 0.2s ease-in-out;
+.footer {
+    background-color: #262626;
 }
 
-#contacto button:hover {
-    background-color: #000;
-    transform: scale(1.1);
+.footer__redes {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer__links hr {
+    width: 60px;
+    background-color: #be9c79;
+    height: 4px;
+}
+
+.footer__links p {
+    color: white;
+}
+
+.footer__autor {
+    background-color: rgba(0, 0, 0, 0.2);
 }
