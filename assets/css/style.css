@@ -284,12 +284,20 @@ input {
     }
 }
 
-.tienda p{
+.tienda p {
     color: white;
 }
 
 .tienda__logo {
     width: 180px;
+}
+
+.tienda__caja {
+    font-size: 20px;
+    padding: 20px 120px;
+    border: 1px solid;
+    background-color: transparent;
+    color: white;
 }
 
 .logos {
